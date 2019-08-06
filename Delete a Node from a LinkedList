@@ -1,0 +1,109 @@
+ /**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    
+    public void deleteNode(ListNode node) {
+        
+        // check if node is null
+        if ( node == null ) 
+            return;
+        
+        // if node is the last node or tail
+        if ( node. next == null )
+            return;
+        
+        node.val = node.next.val;
+        node.next = node.next.next;
+        
+    } // end of method.
+    
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        
+        
+        
+        
+//         // check if the linked list has at least two elements.
+//         if ( size(node) >= 2)
+//         {
+//             //TODO
+//         } // end of if.
+        
+//         // check if all nodes' values are unique; no duplicates.
+//         if( hasDuplicate(node) ) {
+            
+//             //TODO
+//         }
+        
+        
+//         // check if the given node is not the tail 
+        
+        
+//         // check if the node is a valid node of the linked list
+        
+        
+//     }
+    
+//     // a function that checks the size of the ListNode
+//     public int size( ListNode n) {
+        
+//         int size = 0;
+//         ListNode tmp = n;
+        
+//         while ( tmp != null ) {
+//             size++;
+//             tmp = tmp.next;
+//         }
+//         return size;
+        
+//     } // end of size()
+    
+//     // checks for duplicates.
+//     public boolean hasDuplicate(ListNode n) {
+        
+//         // if linked list contains a duplicate
+//         // boolean hasDuplicate = false;
+        
+//         // points to the 'head' of the given linked list.
+//         ListNode tmp = n;
+        
+//         // points to the adjacent.
+//         ListNode adjacentNodePointer = tmp.next;
+        
+//         // holds the number of duplicates
+//         int count = 0;
+        
+//         // traverse the linked list to find duplicate/s
+//         while( tmp.next != null ) {
+            
+//             // starting from the adjacent/next node.
+//             adjacentNodePointer = tmp.next;
+            
+//             while( adjacentNodePointer != null ) {
+                
+//                 // if duplicate found.
+//                 if ( tmp.val == adjacentNodePointer.val ) {
+//                     return true;
+//                 } // end of if.
+                
+//                 // if no duplicate, then point to the next node.
+//                 adjacentNodePointer = adjacentNodePointer.next;
+                
+//             } // end of inner while loop.
+            
+//             // update the tmp node to the next.
+//             tmp = tmp.next;
+            
+//         } // end of outer while loop.
+        
+//         return hasDuplicate;
+        
+//     } // end of hasDuplicate()
+    
+
+// }
